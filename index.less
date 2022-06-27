@@ -5,9 +5,11 @@ body{
 header{
     position: relative;
     width: 100%;
+    min-width: 1200px;
     height: 450px;
     // background-color: aqua;
     .bg{
+        min-width: 1200px;
         width: 100%;
         height: 450px;
         position: absolute;
@@ -31,7 +33,7 @@ header{
         position: absolute;
         color: #fff;
         top: 50%;
-        font-size: 20px;
+        font-size: 26px;
         left: 30%;
     }
 
@@ -65,8 +67,8 @@ main{
             font-size: 20px;
             color: #fff;
             text-align: center;
-            height: 40px;
-            line-height: 40px;
+            height: 60px;
+            line-height: 60px;
         }
         .content{
             text-align: center;
@@ -76,14 +78,22 @@ main{
                 text-align: center;
                 th,td{
                     text-align: left;
+                    height: 40px;
+                    line-height: 40px;
+                    padding: 0;
                 }
                 td{
                     font-size: 20px;
                 }
+                .char{
+                    background-color: lightyellow;
+                }
+
+                .relax{
+                    background-color: rgb(197, 224, 179);
+                }
             }
-            .char{
-                background-color: lightyellow;
-            }
+
         }
     }
 

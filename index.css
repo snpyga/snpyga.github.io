@@ -58,8 +58,8 @@ main .days .title {
   font-size: 20px;
   color: #fff;
   text-align: center;
-  height: 40px;
-  line-height: 40px;
+  height: 60px;
+  line-height: 60px;
 }
 main .days .content {
   text-align: center;
@@ -72,10 +72,16 @@ main .days .content table {
 main .days .content table th,
 main .days .content table td {
   text-align: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
 }
 main .days .content table td {
   font-size: 20px;
 }
-main .days .content .char {
+main .days .content table .char {
   background-color: lightyellow;
+}
+main .days .content table .relax {
+  background-color: #c5e0b3;
 }
