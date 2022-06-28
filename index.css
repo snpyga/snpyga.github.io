@@ -1,24 +1,24 @@
 body {
   margin: 0;
   padding: 0;
+  background-attachment: fixed;
 }
 header {
   position: relative;
   width: 100%;
   min-width: 1200px;
-  height: 450px;
+  height: 400px;
 }
 header .bg {
   min-width: 1200px;
   width: 100%;
-  height: 450px;
+  height: 400px;
   position: absolute;
   background-image: url(img/header-bg4.jpg);
   background-repeat: no-repeat;
   background-size: cover ;
   background-position: center center;
   z-index: -1;
-  filter: blur(1px);
 }
 header .title {
   font-size: 60px;
@@ -43,18 +43,26 @@ header .logo img {
   width: 150px;
 }
 main {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  color: #333;
   width: 1200px;
   min-height: 1000px;
   margin: 0 auto;
-  background-color: rgba(224, 224, 224, 0.2);
 }
 main h1 {
+  line-height: 100px;
   text-align: center;
-  margin: 5px 0;
   font-size: 28px;
+  margin: 0;
+}
+main .days {
+  box-shadow: 5px 5px 10px #999;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 main .days .title {
-  background-color: #4aacc5;
+  background: linear-gradient(90deg, #4AACC5, #31C2C7, #46D5BA);
   font-size: 20px;
   color: #fff;
   text-align: center;
@@ -63,25 +71,39 @@ main .days .title {
 }
 main .days .content {
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
+  padding: 20px 20px;
 }
 main .days .content table {
   width: 100%;
   text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+main .days .content table tr {
+  height: 35px;
 }
 main .days .content table th,
 main .days .content table td {
   text-align: left;
-  height: 40px;
-  line-height: 40px;
   padding: 0;
-}
-main .days .content table td {
+  margin: 0;
   font-size: 20px;
 }
 main .days .content table .char {
-  background-color: lightyellow;
+  background: linear-gradient(90deg, #945490, #F9F871);
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: bottom;
+}
+main .days .content table .char td {
+  font-size: 18px;
 }
 main .days .content table .relax {
-  background-color: #c5e0b3;
+  border-bottom: #fff 10px solid;
+  color: #70DB93;
+}
+main .days .content table tr:not(.char):not(.relax) td:nth-child(4) {
+  border-left: rgba(224, 224, 224, 0.4) 2px solid;
+  text-align: center;
 }
