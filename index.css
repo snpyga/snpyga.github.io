@@ -4,7 +4,8 @@ body{
   background-image: url(./img/header-bg2.jpg);
   /* background-origin:content-box; */
   /* background-position: center center; */
-  background-size: cover;
+  /* background-size: cover; */
+  /* background-size: 100vw; */
   background-repeat: no-repeat;
   font-size: 16px;
   background-color:rgba(224,224,224,0.4);
