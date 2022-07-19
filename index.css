@@ -1,10 +1,11 @@
 body{
+  min-width: 1200px;
   /* background: linear-gradient(135deg, #FFB6B9 0%, #FFB6B9 35%, #FAE3D9 calc(35% + 1px), #FAE3D9 45%, #BBDED6 calc(45% + 1px), #BBDED6 65%, #61C0BF calc(65% + 1px), #61C0BF 100%); */
   background-image: url(./img/header-bg2.jpg);
-  background-repeat: no-repeat;
   /* background-origin:content-box; */
   /* background-position: center center; */
   background-size: cover;
+  background-repeat: no-repeat;
   font-size: 16px;
   background-color:rgba(224,224,224,0.4);
 }
