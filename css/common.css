@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     padding-top: 5rem;
     /* padding-bottom: 3rem; */
@@ -9,20 +10,16 @@ body {
 
 }
 
-
-main{
-    min-height: 50vh;
-}
-
 .nav-item .active span {
     padding-bottom: 5px;
     border-bottom: 2px solid rgba(225, 225, 225, 0.7);
 }
 
+
 .banner {
     width: 100%;
     height: 17rem;
-    background-image: url("./img/header-bg.jpg");
+    background-image: url("/img/header-bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -33,6 +30,13 @@ main{
     -ms-background-size: cover;
 
 }
+
+
+
+main{
+    min-height: 50vh;
+}
+
 
 @media (min-width: 1200px) {
     .banner{
