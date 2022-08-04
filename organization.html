@@ -13,7 +13,7 @@
     <script>
         $(function(){
             $("header").load("/component/header.html",function(){
-                $("nav .navbar-nav .organizers a").addClass("active");
+                $("nav .navbar-nav .organization a").addClass("active");
             });
             $("footer").load("/component/footer.html");
         });
@@ -22,39 +22,43 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
+    <header></header>
    
 
 
     <main>
-        
- <p style="font-size:40px">主办单位:</p>
-   <ul style="font-size:20px">  
-  <li>中山大学物理学院</li>
-  <li>中山大学物理与天文学院</li>
-  <li>中山大学中法核工程与技术学院</li>
-  <li>中山大学理学院</li>
-  <li>华南师范大学量子物质研究院</li>
-  <li>华南理工大学物理与光电学院</li>
-  <li>暨南大学理工学院物理学系</li>
-  <li>深圳大学物理与光电工程学院</li>
-  <li>香港大学物理系</li>
-  <li>澳门科技大学月球与行星科学国家重点实验室</li>
-  <li>中科院近代物理研究所惠州研究部</li>
-  <li>散裂中子源科学中心</li>
-    </ul>
+        <div class="container">
+            <h1>主办单位:</h1>
+            <ul style="font-size:20px">  
+                    <li>中山大学物理学院</li>
+                    <li>中山大学物理与天文学院</li>
+                    <li>中山大学中法核工程与技术学院</li>
+                    <li>中山大学理学院</li>
+                    <li>华南师范大学量子物质研究院</li>
+                    <li>华南理工大学物理与光电学院</li>
+                    <li>暨南大学理工学院物理学系</li>
+                    <li>深圳大学物理与光电工程学院</li>
+                    <li>香港大学物理系</li>
+                    <li>澳门科技大学月球与行星科学国家重点实验室</li>
+                    <li>中科院近代物理研究所惠州研究部</li>
+                    <li>散裂中子源科学中心</li>
+            </ul>
+
+        </div>
+
+        <div class="container text-center">
+            <img src="img/logo_all.jpg" alt="" style="width:40%"> 
+        </div>
+   
          
-    <img src="img/logo_all.jpg" alt="" style="width:40%"> 
+
 
     </main>
 
 
 
 
-    <footer>
-    </footer>
+    <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
