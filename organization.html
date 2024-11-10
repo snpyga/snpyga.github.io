@@ -12,8 +12,12 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.1.min.js"></script>
     <script>
         $(function(){
-            $("header").load("/component/header.html",function(){
-                $("nav .navbar-nav .organization a").addClass("active");
+            $.ajax({
+                url: '/component/navigation.html',
+                success: function(data) {
+                    $("header").prepend(data);
+                    $("nav .navbar-nav .organization a").addClass("active");
+                }
             });
             $("footer").load("/component/footer.html");
         });
@@ -22,13 +26,18 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <div class="banner d-flex  flex-column align-content-center justify-content-center">
+            <div class="container " style="font-family: Georgia,serif; color: #fefefe;">
+                <h1 class="mb-4"> 主办单位</h1>
+            </div>
+        </div>
+    </header>
    
 
 
     <main>
         <div class="container">
-            <h1>主办单位:</h1>
             <ul style="font-size:20px">  
                     <li>中山大学物理学院</li>
                     <li>中山大学物理与天文学院</li>

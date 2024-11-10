@@ -12,8 +12,12 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.1.min.js"></script>
     <script>
         $(function(){
-            $("header").load("/component/header.html",function(){
-                $("nav .navbar-nav .index a").addClass("active");
+            $.ajax({
+                url: '/component/navigation.html',
+                success: function(data) {
+                    $("header").prepend(data);
+                    $("nav .navbar-nav .index a").addClass("active");
+                }
             });
             $("footer").load("/component/footer.html");
         });
@@ -25,7 +29,14 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <div class="banner d-flex  flex-column align-content-center justify-content-center">
+            <div class="container " style="font-family: Georgia,serif; color: #fefefe;">
+                <h1 class="mb-4">“粤港澳”核物理论坛</h1>
+                <h4 class="fst-italic">Symposium on Nuclear Physics in Guangdong-Hong Kong-Macao Area</h2>
+            </div>
+        </div>
+    </header>
 
 
     <main>
